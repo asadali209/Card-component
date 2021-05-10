@@ -7,7 +7,6 @@ body{
 
 .box{
   max-width: 1440px;
-  // min-width: 375px;
   margin: 0 auto;
   border-radius: 5px;
   background-color: $dark-desaturated-blue;
@@ -17,6 +16,7 @@ body{
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
@@ -33,7 +33,7 @@ body{
   .text-area{
     text-align: center;
     margin-top: 1.5em;
-    padding: 2em 4em;
+    padding: 2em 1.5em;
 
     h1{
       color: $white;

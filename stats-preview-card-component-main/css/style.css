@@ -33,6 +33,7 @@ body {
   height: 320px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   position: relative;
@@ -49,7 +50,7 @@ body {
 .box .text-area {
   text-align: center;
   margin-top: 1.5em;
-  padding: 2em 4em;
+  padding: 2em 1.5em;
 }
 
 .box .text-area h1 {
