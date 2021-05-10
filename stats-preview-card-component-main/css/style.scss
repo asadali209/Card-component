@@ -1,0 +1,146 @@
+@import 'global';
+@import 'color';
+
+body{
+  background-color: $very-dark-blue;
+}
+
+.box{
+  max-width: 1440px;
+  // min-width: 375px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: $dark-desaturated-blue;
+
+  .image-area{
+    background: url("../images/image-header-mobile.jpg");
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: hsla(277, 64%, 61%, 0.6);
+    }
+  }
+
+  .text-area{
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 2em 4em;
+
+    h1{
+      color: $white;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 0.8em;
+
+      span{
+        color: $soft-violet;
+      }
+    }
+
+    p{
+      color: $slightly-transparent-white;
+      font-family: 'Lexend Deca', sans-serif;
+      padding: 0 1.5em;
+      margin-bottom: 2.5em;
+      line-height: 2;
+    }
+
+    ul{
+      list-style: none;
+      
+      li{
+        font-family: 'Inter', sans-serif;
+  
+        h2{
+          color: $white;
+        }
+  
+        p{
+          color: $slightly-transparent-white-headings;
+          margin-top: 0.5em;
+        }
+      }
+
+    }
+
+  }
+}
+
+.attribution{ 
+  font-size: 12px; 
+  text-align: center; 
+  font-family: 'Lexend Deca', sans-serif;
+  color: $slightly-transparent-white-headings;
+  padding-bottom: 2em;
+  
+  a{ 
+    color: $soft-violet; 
+    text-decoration: none;
+  }
+
+}
+
+@media(min-width: 990px){
+
+  .box{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  
+    .image-area{
+      width: 49%;
+      background: none;
+      background: url("../images/image-header-desktop.jpg");
+      height: 438px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 5px;
+    }
+  
+    .text-area{
+      text-align: left;
+      width: 47%;
+      margin-top: 0;
+      margin-left: 4em;
+  
+      h1{
+        margin-bottom: 1em;
+        padding-right: 3em;
+        font-size: 2rem;
+      }
+  
+      p{
+        padding: 0 5em 0 0;
+      }
+  
+      ul{
+        display: flex;
+        
+        li{
+          margin-right: 1.5em;
+ 
+          p{
+            padding: 0 1.5em 0 0;
+            margin-bottom: 0;
+          }
+        }
+  
+      }
+  
+    }
+  }
+
+  .attribution{ 
+    padding-bottom: 1em;
+  }
+
+}
